@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Yet Anothe IDP',
-  tagline: 'Team's working is cool',
+  title: 'Yet Another IDP',
+  tagline: 'Working alltogether is cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
