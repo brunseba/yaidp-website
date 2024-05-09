@@ -1,0 +1,3 @@
+[submodule "idpbuilder"]
+	path = docs/idpbuilder
+	url = https://github.com/cnoe-io/idpbuilder.git

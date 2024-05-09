@@ -18,8 +18,10 @@ const config: Config = {
   organizationName: 'SparrowHawkOfHills', // Usually your GitHub org/user name.
   projectName: 'Yet Another IDP', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  trailingSlash: false,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -28,6 +30,10 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  stylesheets: [
+    "https://fonts.googleapis.com/icon?family=Material+Icons",
+  ],
 
   presets: [
     [
@@ -65,10 +71,25 @@ const config: Config = {
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'doc',
+          docId: 'intro/intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Introduction',
+        },
+        {
+          to: '/docs/category/technology-capabilities',
+          position: 'left',
+          label: 'Technology Capabilities',
+        },
+        {
+          to: '/docs/reference-implementation',
+          position: 'left',
+          label: 'Reference Implementations'
+        },
+        {
+          to: '/radars',
+          position: 'left',
+          label: 'Technology Radars',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
